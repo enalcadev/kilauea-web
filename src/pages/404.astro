@@ -1,0 +1,25 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import Header from '@/sections/Header.astro';
+import Footer from '@/sections/Footer.astro';
+---
+
+<Layout>
+    <div class="flex min-h-screen flex-col">
+        <Header />
+        <div class="flex flex-1">
+            <section class="max-w-4xl mx-auto px-4 py-20 flex flex-col items-center justify-center gap-8">
+                <h1 class="text-6xl md:text-8xl text-center mb-4">
+                    404
+                </h1>
+                <p class="text-xl text-balance mb-8">
+                    Lo sentimos, la página que buscas no existe.
+                </p>
+                <a href="/" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700 transition-all hover:scale-105 active:scale-95">
+                    Volver al inicio
+                </a>
+            </section>
+        </div>
+        <Footer />
+    </div>
+</Layout>
